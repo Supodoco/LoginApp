@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C444D67428E7439600D832A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67328E7439600D832A2 /* AppDelegate.swift */; };
 		C444D67628E7439600D832A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67528E7439600D832A2 /* SceneDelegate.swift */; };
-		C444D67828E7439600D832A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67728E7439600D832A2 /* ViewController.swift */; };
+		C444D67828E7439600D832A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67728E7439600D832A2 /* LoginViewController.swift */; };
 		C444D67B28E7439600D832A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C444D67928E7439600D832A2 /* Main.storyboard */; };
 		C444D67D28E7439800D832A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C444D67C28E7439800D832A2 /* Assets.xcassets */; };
 		C444D68028E7439800D832A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C444D67E28E7439800D832A2 /* LaunchScreen.storyboard */; };
+		C444D68828E743B800D832A2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D68728E743B800D832A2 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C444D67028E7439600D832A2 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C444D67328E7439600D832A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C444D67528E7439600D832A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C444D67728E7439600D832A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C444D67728E7439600D832A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C444D67A28E7439600D832A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C444D67C28E7439800D832A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C444D67F28E7439800D832A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C444D68128E7439800D832A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C444D68728E743B800D832A2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C444D67328E7439600D832A2 /* AppDelegate.swift */,
 				C444D67528E7439600D832A2 /* SceneDelegate.swift */,
-				C444D67728E7439600D832A2 /* ViewController.swift */,
+				C444D67728E7439600D832A2 /* LoginViewController.swift */,
+				C444D68728E743B800D832A2 /* WelcomeViewController.swift */,
 				C444D67928E7439600D832A2 /* Main.storyboard */,
 				C444D67C28E7439800D832A2 /* Assets.xcassets */,
 				C444D67E28E7439800D832A2 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C444D67828E7439600D832A2 /* ViewController.swift in Sources */,
+				C444D67828E7439600D832A2 /* LoginViewController.swift in Sources */,
+				C444D68828E743B800D832A2 /* WelcomeViewController.swift in Sources */,
 				C444D67428E7439600D832A2 /* AppDelegate.swift in Sources */,
 				C444D67628E7439600D832A2 /* SceneDelegate.swift in Sources */,
 			);

@@ -18,15 +18,11 @@ class LoginViewController: UIViewController {
     private let username = "User"
     private let password = "123456"
     
-    // test
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTF.text = username
-        passwordTF.text = password
         logInButton.layer.cornerRadius = 4
     }
-   
-    // MARK: - Override Methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)

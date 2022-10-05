@@ -12,10 +12,19 @@ class LoginViewController: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
+    @IBOutlet var logInButton: UIButton!
     
     // MARK: - Private Properties
     private let username = "User"
     private let password = "123456"
+    
+    // test
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        usernameTF.text = username
+        passwordTF.text = password
+        logInButton.layer.cornerRadius = 4
+    }
    
     // MARK: - Override Methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -23,17 +32,22 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeString = "Welcome, \(usernameTF.text ?? "Anonymous")!"
+        guard let tabbar = segue.destination as? UITabBarController else { return }
+        for controller in tabbar.children {
+            if let controller = controller as? WelcomeViewController {
+                controller.welcomeString = usernameTF.text
+            }
+        }
     }
 
     // MARK: - IB Actions
-    @IBAction func forgotUsernameButtonAction() {
-        showAlert(title: "Oops!", message: "Your username is \(username) 😉")
+    @IBAction func reminderButtons(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(title: "Oops!", message: "Your username is \(username) 😉")
+        : showAlert(title: "Oops!", message: "Your password is \(password) 😉")
     }
-    @IBAction func forgotPasswordButtonAction() {
-        showAlert(title: "Oops!", message: "Your password is \(password) 😉")
-    }
+    
+    
     @IBAction func loginButtonAction() {
         if (usernameTF.text, passwordTF.text) != (username, password) {
             showAlert(

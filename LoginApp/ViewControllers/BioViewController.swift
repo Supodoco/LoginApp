@@ -11,15 +11,14 @@ class BioViewController: UIViewController {
     
     @IBOutlet var bioLabel: UILabel!
     
-    var bioText: String!
-    var bioTitle: String!
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.gradientConfigure()
         navigationController?.navigationBar.tintColor = UIColor.white
-        title = bioTitle + " Bio"
-        bioLabel.text = bioText
+        title = person.fullName + " Bio"
+        bioLabel.text = person.bio
     }
    
 }

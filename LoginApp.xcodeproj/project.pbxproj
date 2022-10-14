@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C41B2DBE28EDA15B00F95DD6 /* CompaniesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B2DBD28EDA15B00F95DD6 /* CompaniesModel.swift */; };
 		C41B2DC228EDA4F500F95DD6 /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B2DC128EDA4F500F95DD6 /* CompaniesViewController.swift */; };
 		C41C29E528EC674C00B12849 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C29E428EC674C00B12849 /* UserInfoViewController.swift */; };
 		C41C29E728EC6AAA00B12849 /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C29E628EC6AAA00B12849 /* UIView + extension.swift */; };
 		C41C29E928EC6D7000B12849 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C29E828EC6D7000B12849 /* BioViewController.swift */; };
-		C41C29EF28ED81A500B12849 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C29EE28ED81A500B12849 /* UserModel.swift */; };
+		C41C29EF28ED81A500B12849 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C29EE28ED81A500B12849 /* Models.swift */; };
 		C444D67428E7439600D832A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67328E7439600D832A2 /* AppDelegate.swift */; };
 		C444D67628E7439600D832A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67528E7439600D832A2 /* SceneDelegate.swift */; };
 		C444D67828E7439600D832A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444D67728E7439600D832A2 /* LoginViewController.swift */; };
@@ -23,12 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C41B2DBD28EDA15B00F95DD6 /* CompaniesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesModel.swift; sourceTree = "<group>"; };
 		C41B2DC128EDA4F500F95DD6 /* CompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
 		C41C29E428EC674C00B12849 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		C41C29E628EC6AAA00B12849 /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
 		C41C29E828EC6D7000B12849 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
-		C41C29EE28ED81A500B12849 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C41C29EE28ED81A500B12849 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C444D67028E7439600D832A2 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C444D67328E7439600D832A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C444D67528E7439600D832A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +91,7 @@
 		C41C29F028ED81AF00B12849 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C41C29EE28ED81A500B12849 /* UserModel.swift */,
-				C41B2DBD28EDA15B00F95DD6 /* CompaniesModel.swift */,
+				C41C29EE28ED81A500B12849 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,14 +198,13 @@
 			files = (
 				C41C29E928EC6D7000B12849 /* BioViewController.swift in Sources */,
 				C444D67828E7439600D832A2 /* LoginViewController.swift in Sources */,
-				C41C29EF28ED81A500B12849 /* UserModel.swift in Sources */,
+				C41C29EF28ED81A500B12849 /* Models.swift in Sources */,
 				C41C29E728EC6AAA00B12849 /* UIView + extension.swift in Sources */,
 				C41B2DC228EDA4F500F95DD6 /* CompaniesViewController.swift in Sources */,
 				C444D68828E743B800D832A2 /* WelcomeViewController.swift in Sources */,
 				C41C29E528EC674C00B12849 /* UserInfoViewController.swift in Sources */,
 				C444D67428E7439600D832A2 /* AppDelegate.swift in Sources */,
 				C444D67628E7439600D832A2 /* SceneDelegate.swift in Sources */,
-				C41B2DBE28EDA15B00F95DD6 /* CompaniesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

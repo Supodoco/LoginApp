@@ -13,13 +13,13 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     
     // MARK: - Public Properties
-    var welcomeString: String!
+    var person: Person!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.gradientConfigure()
-        welcomeLabel.text = "Welcome, \(welcomeString ?? "Anonymous")!"
+        welcomeLabel.text = "Welcome, \(person.name)!"
     }
 
 }

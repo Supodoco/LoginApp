@@ -17,31 +17,32 @@ class UserInfoViewController: UIViewController {
     
     @IBOutlet var userImage: UIImageView!
     
-    private let userInfo = UserModel.getUserInfo()
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.gradientConfigure()
-        title = userInfo.name + " " + userInfo.surname
+        title = person.fullName
         
         userLabelsConfigure()
         userImageConfigure()
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let bioVC = segue.destination as? BioViewController else { return }
-        bioVC.bioText = userInfo.bio
-        bioVC.bioTitle = userInfo.name + " " + userInfo.surname
+        bioVC.person = person
     }
     
     private func userLabelsConfigure() {
-        nameLabel.text! += " \(userInfo.name)"
-        surnameLabel.text! += " \(userInfo.surname)"
-        companyLabel.text! += " \(userInfo.company)"
-        departmentLabel.text! += " \(userInfo.department)"
-        positionInCompanyLabel.text! += " \(userInfo.positionInCompany)"
+        nameLabel.text              = "Имя: \(person.name)"
+        surnameLabel.text           = "Фамилия: \(person.surname)"
+        companyLabel.text           = "Компания: \(person.company)"
+        departmentLabel.text        = "Отдел: \(person.department)"
+        positionInCompanyLabel.text = "Должность: \(person.positionInCompany)"
     }
+    
     private func userImageConfigure() {
-        userImage.image = UIImage(named: userInfo.image)
+        userImage.image = UIImage(named: person.image)
         userImage.layer.cornerRadius = userImage.frame.height / 2
     }
 }

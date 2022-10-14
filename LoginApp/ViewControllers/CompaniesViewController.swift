@@ -11,20 +11,17 @@ class CompaniesViewController: UIViewController {
 
     @IBOutlet var infoLabel: UILabel!
     
-    let companies = CompanyModel.getCompaniesInfo()
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.gradientConfigure()
         title = "Companies"
         
-        for company in companies {
-            infoLabel.text! += company.name + "\n" + company.info + "\n\n"
+        var companiesInfo = ""
+        for company in person.companiesFounded {
+            companiesInfo += company.name + "\n" + company.info + "\n\n"
         }
-
+        infoLabel.text = companiesInfo
     }
-    
-
-    
-
 }
